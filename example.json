@@ -1,0 +1,16 @@
+{
+  "description": "コラッツ予想オンラインの計算例",
+  "examples": [
+    {
+      "start": 3,
+      "sequence": [3, 10, 5, 16, 8, 4, 2, 1],
+      "stoppingTime": 7,
+      "maximum": 16
+    },
+    {
+      "start": 27,
+      "stoppingTime": 111,
+      "maximum": 9232
+    }
+  ]
+}

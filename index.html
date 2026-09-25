@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コラッツ予想オンライン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>コラッツ予想オンライン</h1>
+      <p>コラッツ数列を計算・解析するブラウザアプリ</p>
+    </header>
+
+    <section class="card">
+      <h2>単一計算</h2>
+      <label for="number">初期値</label>
+      <input id="number" type="number" min="1" step="1" value="27">
+      <label for="maxSteps">最大ステップ数</label>
+      <input id="maxSteps" type="number" min="1" step="1" value="100000">
+      <div class="buttons">
+        <button id="calculate">計算</button>
+        <button id="clear" class="secondary">クリア</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>結果</h2>
+      <div id="summary" class="summary"></div>
+      <pre id="output">ここに計算結果が表示されます。</pre>
+    </section>
+
+    <section class="card">
+      <h2>一括計算</h2>
+      <p>カンマ区切りで複数の正の整数を入力してください。</p>
+      <input id="batch" type="text" value="1,2,3,5,27,97">
+      <button id="batchCalculate">一括計算</button>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>初期値</th><th>停止時間</th><th>最大値</th><th>1到達</th></tr>
+          </thead>
+          <tbody id="batchResults"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>注意</h2>
+      <p>
+        このプログラムは有限範囲の数値実験を行います。
+        計算結果だけからコラッツ予想全体が証明されたことにはなりません。
+      </p>
+    </section>
+
+    <footer>
+      <span>Collatz Conjecture Online</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

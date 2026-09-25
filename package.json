@@ -1,0 +1,11 @@
+{
+  "name": "collatz-conjecture-online",
+  "version": "1.0.0",
+  "description": "コラッツ予想の数列を計算・解析するブラウザアプリ",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/collatz.test.js",
+    "start": "python -m http.server 8000"
+  },
+  "license": "MIT"
+}
